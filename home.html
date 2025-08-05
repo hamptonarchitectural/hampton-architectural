@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hampton Architectural</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--Navigation Bar-->
+<body class="bg-white text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="home.html" class="flex items-center">
+                <img src="images/logo.png" alt="Hampton Architectural Logo" class="h-16 mr-3">
+            </a>
+            
+            <nav id="desktop-nav" class="hidden md:flex items-center space-x-6">
+                <a href="home.html" class="nav-link active">Home</a>
+                <a href="pre-application.html" class="nav-link">Pre-Application</a>
+                <a href="permitted-development.html" class="nav-link">Permitted Development</a>
+                <a href="planning-permission.html" class="nav-link">Planning Permission</a>
+                <a href="#contact" class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition">Contact Us</a>
+            </nav>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-900 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="home.html" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 nav-link active">Home</a>
+            <a href="pre-application.html" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 nav-link">Pre-Application</a>
+            <a href="permitted-development.html" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 nav-link">Permitted Development</a>
+            <a href="planning-permission.html" class="block py-3 px-6 text-gray-600 hover:bg-gray-50 nav-link">Planning Permission</a>
+            <a href="#contact" class="block py-3 px-6 text-gray-600 hover:bg-gray-50">Contact Us</a>
+        </div>
+    </header>
+
+<!--Hero Section-->
+    <main>
+        <section class="hero-section text-center py-24 md:py-30" style="background-image: url(images/home-banner.jpeg);">
+            <div class="hero-overlay"></div>
+            <div class="container mx-auto px-6 relative">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Architectural Services</h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    Expert guidance at every step
+                </p>
+                <a href="#contact" class="bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-900 transition-transform transform hover:scale-105">
+                    Get a Free Consultation
+                </a>
+            </div>
+        </section>
+        
+<!--What Are Architectural Services-->        
+        <section id="Architectural Services" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="lg:flex lg:items-center lg:gap-12">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            What Are Architectural Services?
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-8">
+                            Almost every project, regardless of size has some form of architectural involvement. From floorplans to detailed construction layouts, all are typically produced by an architectural team, during key project stages like concept and detailed design.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold">Can You Do It Yourself</h4>
+                                    <p class="text-gray-600">If you're competent in design, know the local policies and have access to CAD or BIM software, and providing you can articulate your
+                                        requirements you can, in theory, complete things like Planning Permission yourself.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold">Why Use Someone Like Us</h4>
+                                    <p class="text-gray-600">Hiring an architectural firm is a wise investment. We act as your professional guide, translating your vision into a creative, functional space
+                                        tailored to your lifestyle, whilst navigating the complexities of Planning Permission and Building Control.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold">Can the Builder Help</h4>
+                                    <p class="text-gray-600">Builders have extensive experience of the real-world challenges of realizing a design during the construction phase. Their 
+                                        skills are generally construction focused, however some larger companies may be able to take on the design works in-house.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:w-1/2 mt-10 lg:mt-0">
+                        <img src="images/home_architectural.jpeg" alt="Professional team working on architectural plans" class="rounded-lg shadow-2xl w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--Planning or Permitted Development-->
+        <section id="Planning or Permitted Development?" class="py-16 md:py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Do I Need Planning?</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Not every project requires Planning Permission, some fall under Permitted Development or Prior Approval.
+                        It's a complex subject, but heres a rough guide.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-red-500 flex flex-col">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Permitted Development</h3>
+                        <p class="text-gray-600 flex-grow">Enlargement, improvement or alterations (e.g. rear and side extensions), additions to the roof (e.g. loft conversions, dormer windows), Porches, 
+                            Buildings incidental to the enjoyment of the house (e.g. garden rooms, sheds, garages), change-of-use (class MA), minor operations (e.g. gates, fences, walls, painting).</p>
+                        <div class="mt-4 pt-4 border-t border-gray-200 flex items-center">
+                            <svg class="w-6 h-6 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            <p class="font-semibold text-red-700">Subject to qualification</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-red-500 flex flex-col">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Prior Approval</h3>
+                        <p class="text-gray-600 flex-grow">Larger home extensions (beyond 3 or 4m), change of use from commercial (Class MA) to residential, conversion of agricultural buildings (class Q), flats ontop of existing buildings (part 20).</p>
+                        <div class="mt-4 pt-4 border-t border-gray-200 flex items-center">
+                            <svg class="w-6 h-6 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            <p class="font-semibold text-red-700">Subject to qualification</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-green-500 flex flex-col">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Planning Permission</h3>
+                        <p class="text-gray-600 flex-grow">New dwellings, subdivision (e.g. HMO), conversion of a flat to multiple flats, works exceeding permitted development 
+                            (e.g. large extensions, balconies), Excluded properties (e.g. flats, maisonettes, listed buildings), material change-of-use. Designated areas (e.g. conservation area, national parks).</p>
+                        <div class="mt-4 pt-4 border-t border-gray-200 flex items-center">
+                            <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <p class="font-semibold text-green-700">Planning Permission Required</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 text-center bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 rounded-r-lg max-w-4xl mx-auto">
+                    <p class="font-bold">Important Note:</p>
+                    <p>There's strict guidance for Permitted Development, not all projects qualify. Building Control approval is still often required even for projects that 
+                        fall under <strong class="font-semibold">Permitted Development</strong> or <strong class="font-semibold">Prior Approval</strong> rights.</p>
+                </div>
+            </div>
+        </section>
+
+<!--How We Make It simple-->
+        <section id="process" class="bg-gray-50 py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16"><h2 class="text-3xl md:text-4xl font-bold text-gray-900">How We Make It Simple</h2><p class="text-lg text-gray-600 mt-2">A clear, structured process designed for your peace of mind.</p></div>
+                <div class="grid md:grid-cols-4 gap-12 relative">
+                    <div class="text-center"><div class="relative mb-4"><div class="w-20 h-20 bg-gray-800 text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto z-10 relative">1</div></div><h3 class="text-xl font-semibold mb-2">Discovery</h3><p class="text-gray-600">We review your project and advise if you need planning.</p></div>
+                    <div class="text-center"><div class="relative mb-4"><div class="w-20 h-20 bg-gray-800 text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto z-10 relative">2</div></div><h3 class="text-xl font-semibold mb-2">Drawings & Specs</h3><p class="text-gray-600">Our team prepares all the necessary drawings for approval.</p></div>
+                    <div class="text-center"><div class="relative mb-4"><div class="w-20 h-20 bg-gray-800 text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto z-10 relative">3</div></div><h3 class="text-xl font-semibold mb-2">Application</h3><p class="text-gray-600">We act as your agent and manage the process, on your behalf.</p></div>
+                    <div class="text-center"><div class="relative mb-4"><div class="w-20 h-20 bg-gray-800 text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto z-10 relative">4</div></div><h3 class="text-xl font-semibold mb-2">Approval & Support</h3><p class="text-gray-600">We act as the main point-of-contact and provide ongoing support.</p></div>
+                </div>
+            </div>
+        </section>
+
+<!--Expert Guidance For Every Project-->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Expert Guidance At Every Stage</h2>
+                    <p class="text-lg text-gray-600 mt-2">We provide tailored support at every stage of your project.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <a href="pre-application.html" class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl transition-shadow cursor-pointer">
+                        <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6"><svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></div>
+                        <h3 class="text-2xl font-semibold mb-3">Pre-Application</h3>
+                        <p class="text-gray-600">Outline plans for pre-application advice such as site location plans, sketches or drawings, statements and photographs etc.</p>
+                    </a>
+                    <a href="permitted-development.html" class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl transition-shadow cursor-pointer">
+                        <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6"><svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
+                        <h3 class="text-2xl font-semibold mb-3">Permitted Development</h3>
+                        <p class="text-gray-600">Detailed 'As Existing' and 'As Proposed' plans together with Building Control drawings, application and management.</p>
+                    </a>
+                    <a href="planning-permission.html" class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl transition-shadow cursor-pointer">
+                        <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6"><svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg></div>
+                        <h3 class="text-2xl font-semibold mb-3">Planning Permission</h3>
+                        <p class="text-gray-600">Highly detailed 'As Existing' and 'As Proposed' plans, design & access statement, planning application and management.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+<!--What We Offer You-->
+        <section id="why-us" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="lg:flex lg:items-center lg:gap-12">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            What We Offer You
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-8">
+                            We're committed to providing an exceptional service, removing complexity with the maximum amount of engagement. We combine architectural knowhow 
+                            with cutting edge technology to ensure we capture every policy requiremenmt, everytime.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold">Nationwide UK Coverage</h4>
+                                    <p class="text-gray-600">No matter where you're located in the UK, we can help.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold">Fixed-Fee Pricing</h4>
+                                    <p class="text-gray-600">We're open about what we provide and the cost of our service. At no point will we charge you extra.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <h4 class="font-semibold">Extensive Experience</h4>
+                                    <p class="text-gray-600">Our team consists of highly experienced professionals dedicated to providing the highest standards.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:w-1/2 mt-10 lg:mt-0">
+                        <img src="images/hone_sketch.jpeg" alt="Professional team working on architectural plans" class="rounded-lg shadow-2xl w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--Our Most Common Services-->        
+        <section id="pricing" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Most Common Services</h2>
+                    <p class="text-lg text-gray-600 mt-2">Prices for almost every type of project, here are our most popular. </p>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="pricing-card bg-white p-8 rounded-xl shadow-lg border-2 border-orange-500 flex flex-col relative">
+                        <div class="absolute top-0 -mt-3 left-1/2 -translate-x-1/2"><span class="bg-orange-500 text-white text-sm font-bold px-4 py-1 rounded-full">Most Popular</span></div>
+                        <h3 class="text-2xl font-semibold mb-2 mt-4">Permitted Development</h3>
+                        <p class="text-gray-500 mb-6 text-sm">Extension</p>
+                        <p class="text-5xl font-bold mb-6">£1,250</p>
+                        <p class="text-gray-600 flex-grow">This is for extensions that can be completed under Permitted Development.</p>
+                    </div>
+                    <div class="pricing-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 flex flex-col relative">
+                        <div class="absolute top-0 right-0 bg-gray-700 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">Self-Builders</div>
+                        <h3 class="text-2xl font-semibold mb-2">Planning</h3>
+                        <p class="text-gray-500 mb-6 text-sm">Existing dwelling</p>
+                        <p class="text-5xl font-bold mb-6">£1,450</p>
+                        <p class="text-gray-600 flex-grow">For additions to any type of existing dwelling like extensions and conversions.</p>
+                    </div>
+                    <div class="pricing-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 flex flex-col relative">
+                        <div class="absolute top-0 right-0 bg-gray-700 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">ARB / RIBA</div>
+                        <h3 class="text-2xl font-semibold mb-2">Planning</h3>
+                        <p class="text-gray-500 mb-6 text-sm">New Build</p>
+                        <p class="text-5xl font-bold mb-6">£1,950</p>
+                        <p class="text-gray-600 flex-grow">For new dwellings like houses and flats.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--Contact Form-->
+<section id="contact" class="bg-gray-800 py-20">
+    <div class="container mx-auto px-6">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+            
+            <!-- START: Left Column (Text and New Buttons) -->
+            <div class="text-center lg:text-left mb-12 lg:mb-0">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to start your project?</h2>
+                <p class="text-gray-300 text-lg max-w-xl mx-auto lg:mx-0 mb-8">
+                    Fill out the form to get in touch, and we'll get back to you as soon as possible for a no-obligation consultation.
+                </p>
+                <p class="text-gray-400 mb-8">Alternatively, email us <a href="mailto:hello@hamptonarchitectural.co.uk" class="text-orange-400 hover:underline">hello@hamptonarchitectural.co.uk</a><class="text-gray-400"> or call 07469 500589</class></p>
+                
+                <!-- ✅ START: New Direct Contact Buttons -->
+                <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+                    
+                    <!-- 1. Call Us Button -->
+                    <a href="tel:+447469500589" class="flex items-center justify-center space-x-2 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.03 11.03 0 004.28 4.28l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C6.477 18 2 13.523 2 8V5a1 1 0 011-1h.004zM16 3a1 1 0 011 1v1.153a1 1 0 01-.836.986l-4.435.74a1 1 0 01-1.06-.54l-.759-1.518a11.03 11.03 0 00-4.28-4.28l1.518-.759a1 1 0 01.54-1.06l.74-4.435A1 1 0 0110.847 2H12a1 1 0 011 1v.004z"/></svg>
+                        <span>Call</span>
+                    </a>
+
+                    <!-- 2. WhatsApp Us Button -->
+                    <a href="https://wa.me/447469500589" target="_blank" class="flex items-center justify-center space-x-2 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.447-4.435-9.884-9.888-9.884-5.448 0-9.886 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        <span>WhatsApp</span>
+                    </a>
+
+                    <!-- 3. Facebook Messenger Button -->
+                    <a href="https://m.me/276683382199212" target="_blank" class="flex items-center justify-center space-x-2 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c2.453 0 4.725-.723 6.643-2.025l2.45 1.838a.75.75 0 00.975-.375l1.838-2.45A11.96 11.96 0 0024 12c0-6.627-5.373-12-12-12zM7.5 14.25a.75.75 0 010-1.5h9a.75.75 0 010 1.5h-9zm0-3.75a.75.75 0 010-1.5h9a.75.75 0 010 1.5h-9z"/></svg>
+                        <span>Messenger</span>
+                    </a>
+                </div>
+                <!-- ✅ END: New Direct Contact Buttons -->
+
+            </div>
+            <!-- END: Left Column -->
+
+
+            <!-- START: Right Column (Contact Form) -->
+            <div class="bg-gray-900 p-8 rounded-lg shadow-2xl">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="81043c3e-4d29-43a5-b8fe-c39c834da511">
+                    <input type="hidden" name="redirect" value="https://www.hamptonbuildingcontrol.co.uk/thank-you.html">
+                    <div class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300">Full Name</label>
+                            <div class="mt-1">
+                                <input type="text" name="name" id="name" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-orange-500 focus:border-orange-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300">Email Address</label>
+                            <div class="mt-1">
+                                <input type="email" name="email" id="email" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-orange-500 focus:border-orange-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-300">Phone Number</label>
+                            <div class="mt-1">
+                                <input type="tel" name="phone" id="phone" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-orange-500 focus:border-orange-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                            <div class="mt-1">
+                                <textarea name="message" id="message" rows="4" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-white focus:ring-orange-500 focus:border-orange-500"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-orange-600 transition">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- END: Right Column -->
+
+        </div>
+    </div>
+</section>    
+    </main>
+
+<!--Footer-->    
+<footer class="bg-gray-900 text-white">
+    <div class="container mx-auto px-6 py-8 text-center">
+
+        <div class="mb-4 flex justify-center space-x-6">
+            <a href="https://www.facebook.com/profile.php?id=61558602239180" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-white hover:text-gray-400 transition-colors duration-300">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/hamptonarchitectural/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-white hover:text-gray-400 transition-colors duration-300">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.802C8.845 3.965 8.548 3.977 7.27 4.029c-2.846.129-4.045 1.328-4.174 4.174-.052 1.278-.063 1.575-.063 4.797s.011 3.519.063 4.797c.13 2.846 1.328 4.045 4.174 4.174 1.278.052 1.575.063 4.797.063s3.519-.011 4.797-.063c2.846-.13 4.045-1.328 4.174-4.174.052-1.278.063-1.575.063-4.797s-.011-3.519-.063-4.797c-.13-2.846-1.328-4.045-4.174-4.174-1.278-.052-1.575-.063-4.797-.063zM12 6.837c-2.848 0-5.163 2.315-5.163 5.163s2.315 5.163 5.163 5.163 5.163-2.315 5.163-5.163S14.848 6.837 12 6.837zm0 8.529c-1.857 0-3.366-1.509-3.366-3.366s1.509-3.366 3.366-3.366 3.366 1.509 3.366 3.366-1.509 3.366-3.366 3.366zm5.188-8.312a1.231 1.231 0 11-2.462 0 1.231 1.231 0 012.462 0z" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/hamptonarchitectural/posts/?feedView=all&viewAsMember=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-white hover:text-gray-400 transition-colors duration-300">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://x.com/MooseConsu72310" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="text-white hover:text-gray-400 transition-colors duration-300">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <p>&copy; 2024 Hampton Building Control. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!--Click to Top-->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><b>&uarr;</b></button>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
