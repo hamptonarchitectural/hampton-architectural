@@ -96,6 +96,34 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // --- 6. DYNAMIC COUNTER LOGIC ---
+    // This animates the milestones numbers when they scroll into view
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = +counter.getAttribute('data-target');
+                const speed = 100; // Adjust this to make it faster or slower
+
+                const updateCount = () => {
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+                counterObserver.unobserve(counter);
+            }
+        });
+    }, { threshold: 0.5 }); // Starts when 50% of the section is visible
+
+    document.querySelectorAll('.counter').forEach((counter) => counterObserver.observe(counter));
+
 }); // END of the main DOMContentLoaded listener
 
 
